@@ -1,10 +1,8 @@
 package project.paginando.entity;
 
 import jakarta.persistence.*;
-import lombok.Data;
 import project.paginando.enuns.LivroGeneroEnum;
 
-@Data
 @Entity
 @Table(name = "livro")
 public class LivroEntity {
