@@ -1,6 +1,9 @@
-package project.paginando.entity;
+package project.paginando.avaliacao.entity;
 
 import jakarta.persistence.*;
+import project.paginando.livro.entity.LivroEntity;
+import project.paginando.usuario.UsuarioEntity;
+
 import java.time.LocalDateTime;
 
 @Entity

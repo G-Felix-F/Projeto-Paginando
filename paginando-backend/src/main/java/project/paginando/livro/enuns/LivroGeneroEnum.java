@@ -1,4 +1,4 @@
-package project.paginando.enuns;
+package project.paginando.livro.enuns;
 
 public enum LivroGeneroEnum {
     ROMANCE("Romance"),

@@ -1,10 +1,15 @@
-package project.paginando.entity;
+package project.paginando.livro.entity;
 
 import jakarta.persistence.*;
-import project.paginando.enuns.LivroGeneroEnum;
+import project.paginando.avaliacao.entity.AvaliacaoEntity;
+import project.paginando.usuario.UsuarioEntity;
+import project.paginando.livro.enuns.LivroGeneroEnum;
+
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
-@Table(name = "livro")
+@Table(name = "livros")
 public class LivroEntity {
 
     @Id
@@ -28,6 +33,12 @@ public class LivroEntity {
 
     @Column(name = "editora", nullable = false)
     private String editora;
+
+    @OneToMany(mappedBy = "livro", cascade = CascadeType.ALL)
+    private Set<AvaliacaoEntity> avaliacoes = new HashSet<>();
+
+    @ManyToMany(mappedBy = "donos")
+    private Set<UsuarioEntity> donos = new HashSet<>();
 
 
 }

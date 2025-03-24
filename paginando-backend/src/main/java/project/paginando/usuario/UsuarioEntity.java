@@ -1,8 +1,9 @@
-package project.paginando.entity;
+package project.paginando.usuario;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
 import lombok.Data;
+import project.paginando.livro.entity.LivroEntity;
 
 import java.util.HashSet;
 import java.util.Set;
