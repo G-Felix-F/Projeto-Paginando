@@ -1,1 +1,13 @@
-.ideia/
+# Intellij
+.idea/
+*.iml
+*.iws
+
+# Maven
+target/
+
+# Logs
+*.log
+
+# Compiled class files
+*.class
